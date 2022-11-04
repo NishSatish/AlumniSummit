@@ -2,6 +2,8 @@
 @import './navbar.scss';
 @import './about.scss';
 @import './activites.scss';
+@import './contact.scss';
+@import './footer.scss';
 
 // ------------------------------------------- GLOBAL CLASSES ------------------------------------------
 body {
@@ -16,9 +18,9 @@ body {
 }
 
 #bg {
-  background-image: linear-gradient(#1b2031, #3b3650);
+  // background-image: linear-gradient(#1b2031, #3b3650);
+  background: linear-gradient(to bottom, #1b2031, #1b2031 60%, #3b3650 100%);
   //   background-image: url('../assets/img/CONTENT_DROP.svg');
   //   height: 100vh;
   padding-top: 70px;
-  padding-bottom: 70px;
 }

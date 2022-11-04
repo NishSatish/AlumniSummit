@@ -4,9 +4,11 @@ $(window).scroll((event) => {
   if (scroll > 400) {
     $('.navbar').addClass('fixed-top');
     $('.navbar').removeClass('color-remover');
+    $('#logo').attr('src', './assets/img/logo.svg');
   } else {
     $('.navbar').removeClass('fixed-top');
     $('.navbar').addClass('color-remover');
+    $('#logo').attr('src', './assets/img/logo2.svg');
   }
 });
 

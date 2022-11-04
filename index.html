@@ -15,14 +15,20 @@
     <link rel="stylesheet" href="./css/bootstrap5.min.css" />
     <script src="./js/bootstrap5.min.js"></script>
     <script src="./js/jquery.min.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/index.js"></script>
   </head>
   <body>
     <!-- ---------------------------------------------NAV SECTION--------------------------------------------- -->
 
     <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" [routerLink]="['/']">
-        <img src="./assets/img/logo.svg" alt="logo" />
+      <a class="navbar-brand" href="#">
+        <img src="./assets/img/logo2.svg" alt="logo" id="logo" />
       </a>
       <a class="navbar-toggler" onclick="overlay()">
         <img src="./assets/img/MENU.svg" class="overlayer" />
@@ -34,13 +40,16 @@
             <a href="#" class="nav-link hvr-bob">Home </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link hvr-bob">About</a>
+            <a href="#about" class="nav-link hvr-bob">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link hvr-bob">Contact</a>
+            <a class="nav-link hvr-bob" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-bob" href="#activities">Activites</a>
           </li>
           <li class="nav-link">
-            <a>
+            <a href="#mainEvent">
               <button class="btn cta-nav hvr-bob">Register</button>
             </a>
           </li>
@@ -55,13 +64,25 @@
           <a href="#" class="nav-link overlay-link" onclick="closeOverlay()"
             >HOME</a
           >
-          <a href="#" class="nav-link overlay-link" onclick="closeOverlay()"
+          <a
+            href="#contact"
+            class="nav-link overlay-link"
+            onclick="closeOverlay()"
             >CONTACT</a
           >
-          <a href="#" class="nav-link overlay-link" onclick="closeOverlay()"
+          <a
+            href="#about"
+            class="nav-link overlay-link"
+            onclick="closeOverlay()"
             >ABOUT</a
           >
-          <a href="#" fragment="contact" onclick="closeOverlay()">
+          <a
+            href="#activites"
+            class="nav-link overlay-link"
+            onclick="closeOverlay()"
+            >ACTIVITIES</a
+          >
+          <a href="#mainEvent" onclick="closeOverlay()">
             <button class="btn overlay-cta hvr-bob">Register Now</button>
           </a>
         </div>
@@ -85,7 +106,7 @@
         </div>
 
         <div class="cta text-center hvr-bob">
-          <a href="javascript:void(0)">Register Now</a>
+          <a href="#mainEvent">Register Now</a>
         </div>
       </div>
     </section>
@@ -117,7 +138,6 @@
               <div class="jupiter">
                 <img src="./assets/img/Jupiter.svg" alt="" loading="lazy" />
               </div>
-              HELLOMCENCECE
             </div>
           </div>
         </div>
@@ -158,14 +178,16 @@
 
           <div class="main-activity">
             <div class="main-activity-name">ANNUAL SUMMIT</div>
-            <div class="main-activity-date">19th November 2022</div>
+            <div class="main-activity-date">17th December 2022</div>
             <p>
               The main event that will be held on the 17th of December will see
               all the BMSCE Alumni together to celebrate 75 years of BMSCE and
               revisit their student life at the institution.
             </p>
             <a>
-              <button class="btn activity-cta hvr-bob">Register</button>
+              <button class="btn activity-cta hvr-bob" id="mainEvent">
+                Register
+              </button>
             </a>
           </div>
 
@@ -194,6 +216,74 @@
                 </p>
               </div>
             </div>
+          </div>
+          <div class="saturn">
+            <img src="./assets/img/SATURN.svg" alt="" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------------------------------------------CONTACT SECTION--------------------------------------------- -->
+      <section id="contact">
+        <div class="container">
+          <h1 class="section-header">Contact us</h1>
+          <div class="row">
+            <div class="col-md text-center">
+              <div class="location text-center">
+                <div class="contact-icon">
+                  <img src="./assets/img/location.svg" alt="location" />
+                </div>
+                <div class="contact-text">
+                  BMS College of Engineering, Basavanagudi, Bangalore - 560019
+                </div>
+              </div>
+            </div>
+            <div class="col-md text-center">
+              <div class="date">
+                <div class="contact-icon">
+                  <img src="./assets/img/calendar.svg" alt="date" />
+                </div>
+                <div class="contact-text">17th December 2022</div>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="mail">
+                <div class="contact-icon">
+                  <img src="./assets/img/mail.svg" alt="mail" />
+                </div>
+                <div class="contact-text">
+                  <a href="mailto:team.alumni@bmsce.ac.in"
+                    >team.alumni@bmsce.ac.in</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------------------------------------------FOOTER SECTION--------------------------------------------- -->
+      <section id="footer">
+        <div class="footer-page">
+          <div class="links-footer text-center">
+            <a href="#about">about</a>
+            <a href="#activities">activites</a>
+            <a href="#contact">contact</a>
+          </div>
+          <br />
+          <div class="profile-links text-center">
+            <a href="https://twitter.com/alumni_bmsce" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://instagram.com/bmsce_alumninetwork" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com/bmscean" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.linkedin.com/company/bmsce-an/" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
           </div>
         </div>
       </section>

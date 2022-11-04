@@ -1,0 +1,52 @@
+@import './fonts.scss';
+@import './variables.scss';
+@import './mixins.scss';
+
+.footer-page {
+  font-family: PoppinsBold;
+  bottom: 0;
+  margin-top: 100px;
+  height: 182px;
+  padding-top: 34px;
+  //   background-image: linear-gradient(#1b2031, #373542);
+  background-image: linear-gradient($banner-blue, #1b2031);
+  border-radius: 17px 17px 0px 0px;
+  color: white;
+
+  a {
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+  }
+
+  a:hover {
+    color: white;
+  }
+}
+
+.links-footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  text-transform: uppercase;
+}
+
+.profile-links {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  a {
+    font-size: 1.5em;
+  }
+}
+
+.brand {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .life-changer {
+    color: inherit;
+  }
+}
