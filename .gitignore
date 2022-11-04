@@ -2,3 +2,5 @@
 css/*.css
 css/*.map
 !/css/index.css 
+!/css/*min.css 
+!/css/index.css 

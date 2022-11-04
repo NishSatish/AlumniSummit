@@ -18,5 +18,3 @@ const overlay = () => {
 const closeOverlay = () => {
   document.getElementById('oNav').style.width = '0%';
 };
-
-console.log(screen.width);
