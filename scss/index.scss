@@ -1,0 +1,24 @@
+@import './hero.scss';
+@import './navbar.scss';
+@import './about.scss';
+@import './activites.scss';
+
+// ------------------------------------------- GLOBAL CLASSES ------------------------------------------
+body {
+  overflow-x: hidden;
+}
+
+.section-header {
+  font-family: PoppinsBlack;
+  font-size: 40px;
+  color: $banner-yellow;
+  text-transform: capitalize;
+}
+
+#bg {
+  background-image: linear-gradient(#1b2031, #3b3650);
+  //   background-image: url('../assets/img/CONTENT_DROP.svg');
+  //   height: 100vh;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}

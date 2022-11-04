@@ -1,0 +1,169 @@
+@import './fonts.scss';
+@import './variables.scss';
+
+.navbar {
+  height: 120px;
+  z-index: 100;
+  background-color: transparent;
+
+  color: white !important;
+}
+
+.navbar-brand {
+  color: white;
+  margin-left: 55px;
+  img {
+    width: 200px;
+  }
+}
+
+.not-fixed-top {
+  a {
+    color: white;
+    // text-decoration: none;
+  }
+
+  a:hover {
+    color: white;
+  }
+}
+
+.fixed-top {
+  height: 120px;
+  color: $banner-blue;
+  // transition: 0.9s;
+  transition-property: opacity;
+  background-color: rgba(255, 255, 255, 0.898);
+  box-shadow: 5px 5px 20px #919191;
+
+  a {
+    color: $banner-blue;
+  }
+  a:hover {
+    color: $banner-blue;
+  }
+}
+
+.color-remover {
+  background-color: transparent;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.overlayer {
+  height: 5em;
+}
+
+.navbar-nav {
+  position: absolute;
+  right: 100px;
+  font-family: PoppinsMedium;
+  font-weight: 400;
+  font-size: 1.3em;
+  text-transform: capitalize;
+
+  .nav-link {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .cta-nav {
+    background-color: $banner-yellow;
+    border-radius: 12px;
+
+    font-family: PoppinsSemibold;
+    color: $banner-blue;
+    text-transform: capitalize;
+    margin-top: 0px;
+  }
+
+  .cta-nav:hover {
+    background-color: transparent;
+    border: 1px solid $banner-yellow;
+    color: $banner-yellow;
+  }
+}
+
+.overlay-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #353840;
+  opacity: 0.95;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 23%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+
+  .overlay-link {
+    font-family: PoppinsBold;
+    font-size: 2em;
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: white;
+  }
+  img {
+    width: 50px;
+    margin-bottom: 20px;
+  }
+
+  .overlay-cta {
+    background-color: $banner-blue;
+    border-radius: 34px;
+    font-weight: 600;
+    color: $banner-yellow;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin-top: 5px;
+  }
+}
+
+// --------------------------- MEDIA QUERIES -----------------------------------
+@media (max-width: 824px) {
+  .navbar-brand {
+    margin-left: 37vw;
+  }
+}
+
+@media (max-width: 540px) {
+  .navbar-brand {
+    margin-left: 35vw;
+    img {
+      width: 150px;
+    }
+  }
+
+  .overlayer {
+    height: 3em;
+  }
+}
+
+@media (max-width: 600px) {
+  .fixed-top {
+    opacity: 0.998;
+  }
+}
+
+@media (max-width: 384px) {
+  .navbar-brand {
+    margin-left: 32vw;
+  }
+}
+
+@media (max-height: 665px) {
+  .overlay-content {
+    top: 3%;
+  }
+}

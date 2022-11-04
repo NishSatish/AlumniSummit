@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>BMSCE Alumni Summit 2022</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/index.css"
+    />
+    <link rel="stylesheet" href="./css/hover-min.css" />
+    <link rel="stylesheet" href="./css/bootstrap5.min.css" />
+    <script src="./js/bootstrap5.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+  </head>
+  <body>
+    <!-- ---------------------------------------------NAV SECTION--------------------------------------------- -->
+
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" [routerLink]="['/']">
+        <img src="./assets/img/logo.svg" alt="logo" />
+      </a>
+      <a class="navbar-toggler" onclick="overlay()">
+        <img src="./assets/img/MENU.svg" class="overlayer" />
+      </a>
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto absolute-ele not-fixed-top">
+          <li class="nav-item active">
+            <a href="#" class="nav-link hvr-bob">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-bob">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-bob">Contact</a>
+          </li>
+          <li class="nav-link">
+            <a>
+              <button class="btn cta-nav hvr-bob">Register</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="oNav" class="overlay-nav">
+        <div class="overlay-content">
+          <span class="closebtn" onclick="closeOverlay()">
+            <img src="./assets/img/cross_y.svg" alt="" />
+          </span>
+          <a href="#" class="nav-link overlay-link" onclick="closeOverlay()"
+            >HOME</a
+          >
+          <a href="#" class="nav-link overlay-link" onclick="closeOverlay()"
+            >CONTACT</a
+          >
+          <a href="#" class="nav-link overlay-link" onclick="closeOverlay()"
+            >ABOUT</a
+          >
+          <a href="#" fragment="contact" onclick="closeOverlay()">
+            <button class="btn overlay-cta hvr-bob">Register Now</button>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ---------------------------------------------HERO SECTION--------------------------------------------- -->
+    <section id="hero">
+      <div class="hero jumbotron">
+        <div class="venus">
+          <img src="./assets/img/Venus.svg" alt="alumnisummit-hero" />
+        </div>
+        <div class="text-center">
+          <h1 class="main-title">annual summit 2022</h1>
+          <p class="sub-title">
+            the biggest BMSCE alumni network event is back!
+          </p>
+        </div>
+        <div class="astro">
+          <img src="./assets/img/Astronaut.svg" alt="alumnisummit-hero" />
+        </div>
+
+        <div class="cta text-center hvr-bob">
+          <a href="javascript:void(0)">Register Now</a>
+        </div>
+      </div>
+    </section>
+    <div id="bg">
+      <!-- ---------------------------------------------ABOUT SECTION--------------------------------------------- -->
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-md">
+              <h1 class="about-header section-header">
+                About our annual summit
+              </h1>
+              <div class="about-text">
+                The Alumni Summit is an annual hosted by the BMSCE Alumni
+                Network. This time around, to celebrate 75 years of BMSCE, the
+                Alumni Summit is going to be bigger and better! Not only does
+                this event bring together BMSCE alumni from across the world, it
+                also brings new opportunities for the students to connect and
+                learn. An event that will witness most, if not all, of BMSCE
+                Alumni participating to network and reconnect with everyone in
+                the institution. From fun informal events to entrepreneurial
+                events, the Alumni Summit has it all covered. A great platform
+                for both the students and the alumni to interact with each other
+                and help each other grow. Trust us when we say this is an
+                opportunity you wouldn’t want to miss!
+              </div>
+            </div>
+            <div class="col-md text-center">
+              <div class="jupiter">
+                <img src="./assets/img/Jupiter.svg" alt="" loading="lazy" />
+              </div>
+              HELLOMCENCECE
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------------------------------------------ACTIVITIES SECTION--------------------------------------------- -->
+      <section id="activities">
+        <div class="container">
+          <h1 class="section-header">activites</h1>
+          <div class="help-text">Hover/Tap the activity to learn more!</div>
+          <div class="row small-row1">
+            <div class="col-md">
+              <div class="content-box-small cb2">
+                <div class="activity-name">OPEN HOUSE</div>
+                <div class="activity-date">5th November 2022</div>
+                <p class="hidden-text">
+                  An event to indulge in nostalgia, an event that will bring
+                  back all your memories, an event where all the departments
+                  will display their history. From campus pictures to previous
+                  events, from placement stats to notable alumni achievements,
+                  we revisit them all!
+                </p>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="content-box-small cb1">
+                <div class="activity-name">LALBAGH</div>
+                <div class="activity-date">19th November 2022</div>
+                <p class="hidden-text">
+                  A fun day spanned over discussions to expand the alumni
+                  network, a street play, and breakfast! A local meet-up to
+                  network and connect in an informal environment and strengthen
+                  the BMSCE Alumni network.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="main-activity">
+            <div class="main-activity-name">ANNUAL SUMMIT</div>
+            <div class="main-activity-date">19th November 2022</div>
+            <p>
+              The main event that will be held on the 17th of December will see
+              all the BMSCE Alumni together to celebrate 75 years of BMSCE and
+              revisit their student life at the institution.
+            </p>
+            <a>
+              <button class="btn activity-cta hvr-bob">Register</button>
+            </a>
+          </div>
+
+          <div class="row small-row2">
+            <div class="col-md">
+              <div class="content-box-small cb3">
+                <div class="activity-name">PHASE SHIFT</div>
+                <div class="activity-date">26th November 2022</div>
+                <p class="hidden-text">
+                  Come be a part of BMSCE's well-known technical fest that
+                  connects students and industries - PhaseShift. Relive your
+                  time during the fest and enjoy the events while interacting
+                  with all your peers and the students!
+                </p>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="content-box-small cb4">
+                <div class="activity-name">ANNUAL ALUMNI SPORTS DAY</div>
+                <div class="activity-date">3rd December 2022</div>
+                <p class="hidden-text">
+                  A sports day to get all your college memories right back. What
+                  better way to bring people together than teaming them to win a
+                  game? Participate in the events organized and showcase your
+                  sports skills!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

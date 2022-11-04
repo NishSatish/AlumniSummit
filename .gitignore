@@ -1,0 +1,4 @@
+# Only index.css file 
+css/*.css
+css/*.map
+!/css/index.css 

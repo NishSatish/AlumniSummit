@@ -1,0 +1,53 @@
+@import './fonts.scss';
+@import './variables.scss';
+@import './mixins.scss';
+
+// #about {
+// //   margin-top: 70px;
+//   //   background-image: url('../assets/img/Stars2.svg');
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-attachment: fixed;
+//   //   height: 70vh;
+// }
+
+.about-text {
+  margin-top: 40px;
+  font-family: PoppinsMedium;
+  font-size: 1.3em;
+  color: white;
+}
+
+.jupiter {
+  position: absolute;
+  right: 0;
+  z-index: 0;
+  height: 15vw;
+  width: 15vw;
+  margin-top: 20%;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+// --------------------------- MEDIA QUERIES -----------------------------------
+
+@media (max-width: 768px) {
+  .about-header,
+  .about-text {
+    text-align: center;
+  }
+
+  .about-header {
+    font-size: 45px;
+  }
+
+  .about-text {
+    font-size: 1.1em;
+  }
+
+  .jupiter {
+    display: none;
+  }
+}
