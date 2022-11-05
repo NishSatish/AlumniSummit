@@ -21,6 +21,10 @@
       integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
       crossorigin="anonymous"
     ></script>
+    <script
+      id="zmurl-checkout"
+      src="https://embed.zmurl.com/checkout-button.js"
+    />
     <script src="./js/index.js"></script>
   </head>
   <body>
@@ -184,11 +188,14 @@
               all the BMSCE Alumni together to celebrate 75 years of BMSCE and
               revisit their student life at the institution.
             </p>
-            <a>
-              <button class="btn activity-cta hvr-bob" id="mainEvent">
-                Register
-              </button>
-            </a>
+            <button
+              class="btn activity-cta hvr-bob"
+              data-zmurl-action="checkout"
+              data-zmurl-event-id="evt-XFFzcTXnnz6br3Y"
+              id="mainEvent"
+            >
+              Register
+            </button>
           </div>
 
           <div class="row small-row2">
