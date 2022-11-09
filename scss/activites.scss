@@ -95,7 +95,7 @@
 }
 
 .main-activity {
-  height: 50vh;
+  height: 35vh;
   width: 40vw;
   background-color: $banner-blue;
   margin: 0 auto;
@@ -153,6 +153,11 @@
 }
 
 // --------------------------- MEDIA QUERIES -----------------------------------
+@media (max-width: 890px) {
+  .main-activity {
+    height: 400px;
+  }
+}
 
 @media (max-width: 768px) {
   .cb1,
@@ -173,7 +178,7 @@
   }
 
   .main-activity {
-    height: 460px;
+    height: 430px;
     width: 400px;
     padding-left: 10px;
     padding-right: 10px;

@@ -20,16 +20,15 @@
 .not-fixed-top {
   a {
     color: white;
-    // text-decoration: none;
+    font-size: 0.9em;
   }
-
   a:hover {
     color: white;
   }
 }
 
 .fixed-top {
-  height: 120px;
+  height: 80px;
   color: $banner-blue;
 
   transition-property: opacity;
@@ -41,6 +40,12 @@
   }
   a:hover {
     color: $banner-blue;
+  }
+
+  .navbar-brand {
+    img {
+      width: 150px;
+    }
   }
 }
 
@@ -133,15 +138,20 @@
 // --------------------------- MEDIA QUERIES -----------------------------------
 @media (max-width: 824px) {
   .navbar-brand {
-    margin-left: 37vw;
+    margin-left: 41vw;
+    margin-top: -40px;
+    img {
+      width: 120px;
+    }
   }
 }
 
 @media (max-width: 540px) {
   .navbar-brand {
     margin-left: 35vw;
+    margin-top: initial;
     img {
-      width: 150px;
+      width: 120px;
     }
   }
 
