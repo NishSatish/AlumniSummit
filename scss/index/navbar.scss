@@ -1,5 +1,5 @@
-@import './fonts.scss';
-@import './variables.scss';
+@import '../fonts.scss';
+@import '../variables.scss';
 
 .navbar {
   height: 120px;
@@ -58,7 +58,7 @@
 }
 
 .overlayer {
-  height: 5em;
+  height: 4em;
 }
 
 .navbar-nav {
@@ -139,7 +139,6 @@
 @media (max-width: 824px) {
   .navbar-brand {
     margin-left: 41vw;
-    margin-top: -40px;
     img {
       width: 120px;
     }

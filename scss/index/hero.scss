@@ -1,12 +1,12 @@
-@import './fonts.scss';
-@import './variables.scss';
-@import './mixins.scss';
+@import '../fonts.scss';
+@import '../variables.scss';
+@import '../mixins.scss';
 
 #hero {
   margin-top: -120px;
 }
 
-.hero {
+.home-hero {
   position: relative;
   height: 100vh;
   background-image: url('../assets/img/HERO.png');
@@ -92,10 +92,10 @@
 }
 
 // --------------------------- MEDIA QUERIES -----------------------------------
-@media (max-width: 824px) {
-  .hero {
+@media (max-width: 840px) {
+  .home-hero {
     .main-title {
-      font-size: calc(100% + 2vw + 2vh);
+      font-size: calc(100% + 1.6vw + 1.6vh);
       padding-left: 40px;
       padding-right: 40px;
     }
@@ -123,9 +123,9 @@
 }
 
 @media (max-width: 586px) {
-  .hero {
+  .home-hero {
     .main-title {
-      font-size: calc(100% + 1.7vw + 1.7vh);
+      font-size: calc(100% + 1.4vw + 1.4vh);
     }
 
     .sub-title {

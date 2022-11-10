@@ -1,0 +1,58 @@
+@import '../fonts.scss';
+@import '../variables.scss';
+@import '../mixins.scss';
+
+#timeline {
+  background: linear-gradient(to bottom, #1b2031, #1b2031 60%, #3b3650 100%);
+  padding-top: 50px;
+  .row {
+    margin-bottom: 50px;
+  }
+}
+
+.info-container {
+  height: 350px;
+  width: 350px;
+  padding: 15px;
+  background-color: white;
+  border: 5px solid $banner-yellow;
+  border-radius: 17px;
+  text-align: center;
+
+  .agenda-activity-name {
+    font-family: PoppinsBlack;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    font-size: 1.7em;
+    color: $banner-blue;
+  }
+}
+
+.row-l-r {
+  .info-container {
+    float: right;
+  }
+
+  .timestamp {
+    float: left;
+    width: 100%;
+    height: 350px;
+
+    .horizontal-bar {
+      width: 150px;
+      height: 5px;
+      background-color: $banner-yellow;
+      position: absolute;
+      margin-left: -25px;
+      margin-top: 150px;
+      //   margin-top: 165px;
+    }
+
+    .time {
+      font-family: PoppinsBlack;
+      color: $banner-yellow;
+      margin-left: 150px;
+      margin-top: 145px;
+    }
+  }
+}

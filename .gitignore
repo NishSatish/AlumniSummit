@@ -4,3 +4,5 @@ css/*.map
 !/css/index.css 
 !/css/*min.css 
 !/css/index.css 
+!/css/agenda.css 
+!/css/navbar.css 

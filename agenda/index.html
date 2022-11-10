@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/index.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/agenda.css"
+    />
+    <link rel="stylesheet" href="../css/hover-min.css" />
+    <link rel="stylesheet" href="../css/bootstrap5.min.css" />
+    <script src="../js/bootstrap5.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/index.js"></script>
+    <title>Annual Homecoming Agenda</title>
+  </head>
+  <body>
+    <!-- ---------------------------------------------NAV SECTION--------------------------------------------- -->
+
+    <nav class="navbar navbar-expand-lg agenda-nav">
+      <a class="navbar-brand" href="https://bmscealumni.org" target="_blank">
+        <img src="../assets/img/logo.svg" alt="logo" id="agenda-logo" />
+      </a>
+      <a class="navbar-toggler" onclick="overlay()">
+        <img src="../assets/img/MENU.svg" class="overlayer" />
+      </a>
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto absolute-ele not-fixed-top">
+          <li class="nav-item active">
+            <a href="/" class="nav-link hvr-bob">Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link hvr-bob">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-bob" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-bob" href="#activities">Activites</a>
+          </li>
+          <li class="nav-link">
+            <a href="#activities">
+              <button class="btn cta-nav hvr-bob">Register</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="oNav" class="overlay-nav">
+        <div class="overlay-content">
+          <span class="closebtn" onclick="closeOverlay()">
+            <img src="./assets/img/cross_y.svg" alt="" />
+          </span>
+          <a href="#" class="nav-link overlay-link" onclick="closeOverlay()"
+            >HOME</a
+          >
+          <a
+            href="#contact"
+            class="nav-link overlay-link"
+            onclick="closeOverlay()"
+            >CONTACT</a
+          >
+          <a
+            href="#about"
+            class="nav-link overlay-link"
+            onclick="closeOverlay()"
+            >ABOUT</a
+          >
+          <a
+            href="#activites"
+            class="nav-link overlay-link"
+            onclick="closeOverlay()"
+            >ACTIVITIES</a
+          >
+          <a href="#activities" onclick="closeOverlay()">
+            <button class="btn overlay-cta hvr-bob">Register Now</button>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ---------------------------------------------HERO SECTION--------------------------------------------- -->
+
+    <section id="agenda-hero">
+      <div class="hero jumbotron agenda-hero">
+        <div class="text-center">
+          <h1 class="main-title-agenda">annual homecoming agenda</h1>
+          <h2>date</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------TIMELINE SECTION--------------------------------------------- -->
+    <section id="timeline">
+      <div class="container">
+        <div class="row row-l-r">
+          <div class="col-md-6">
+            <div class="info-container">
+              <div class="agenda-activity-name">OPEN HOUSE</div>
+              <div class="agenda-activity-date">5th November 2022</div>
+              <p class="agenda-description-text">
+                An event to indulge in nostalgia, an event that will bring back
+                all your memories, an event where all the departments will
+                display their history. From campus pictures to previous events,
+                from placement stats to notable alumni achievements, we revisit
+                them all!
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="timestamp">
+              <div class="horizontal-bar"></div>
+              <div class="time">10:00AM to 11:00AM</div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-r-l">
+          <div class="col-md-6"><div class="timestamp"></div></div>
+          <div class="col-md-6"><div class="info-container"></div></div>
+        </div>
+        <div class="row row-l-r">
+          <div class="col-md-6"><div class="info-container"></div></div>
+          <div class="col-md-6"><div class="timestamp"></div></div>
+        </div>
+        <div class="row row-r-l">
+          <div class="col-md-6"><div class="timestamp"></div></div>
+          <div class="col-md-6"><div class="info-container"></div></div>
+        </div>
+        <div class="row row-l-r">
+          <div class="col-md-6"><div class="info-container"></div></div>
+          <div class="col-md-6"><div class="timestamp"></div></div>
+        </div>
+        <div class="row row-r-l">
+          <div class="col-md-6"><div class="timestamp"></div></div>
+          <div class="col-md-6"><div class="info-container"></div></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

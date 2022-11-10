@@ -1,0 +1,28 @@
+@import '../fonts.scss';
+@import '../variables.scss';
+@import '../mixins.scss';
+
+#agenda-hero {
+  margin-top: -120px;
+}
+
+.agenda-hero {
+  background-color: #2c2644;
+  position: relative;
+  height: 50vh;
+}
+
+h2 {
+  position: absolute;
+  @include centralise;
+  top: 30vh;
+}
+
+.main-title-agenda {
+  position: absolute;
+  @include centralise;
+  top: 27vh;
+  text-transform: uppercase;
+  color: $banner-yellow;
+  font-family: PoppinsBlack;
+}
