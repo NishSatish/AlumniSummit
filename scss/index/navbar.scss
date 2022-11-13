@@ -137,10 +137,12 @@
 
 // --------------------------- MEDIA QUERIES -----------------------------------
 @media (max-width: 824px) {
-  .navbar-brand {
-    margin-left: 41vw;
-    img {
-      width: 120px;
+  .fixed-top {
+    .navbar-brand {
+      margin-left: 41vw;
+      img {
+        width: 120px;
+      }
     }
   }
 }
@@ -166,8 +168,13 @@
 }
 
 @media (max-width: 384px) {
-  .navbar-brand {
-    margin-left: 32vw;
+  .fixed-top {
+    .navbar-brand {
+      margin-left: 35.5vw;
+      img {
+        width: 120px;
+      }
+    }
   }
 }
 

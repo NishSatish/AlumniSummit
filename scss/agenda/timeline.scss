@@ -28,6 +28,10 @@
     font-size: 1.7em;
     color: $banner-blue;
   }
+
+  .agenda-description-text {
+    font-family: PoppinsRegular;
+  }
 }
 
 .row-l-r {
@@ -79,6 +83,34 @@
       margin-top: 130px;
       margin-right: 25px;
       min-width: 20px;
+    }
+  }
+}
+
+.time-mobile {
+  font-family: PoppinsBlack;
+  font-size: 1.3em;
+  color: $banner-yellow;
+  margin-top: -10px;
+  display: none;
+}
+
+// --------------------------- MEDIA QUERIES -----------------------------------
+
+@media (max-width: 768px) {
+  .time-mobile {
+    display: initial;
+  }
+
+  .timestamp {
+    display: none;
+  }
+
+  .row-l-r,
+  .row-r-l {
+    .info-container {
+      float: initial;
+      margin: 0 auto;
     }
   }
 }
