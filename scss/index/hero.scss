@@ -26,12 +26,12 @@
   .main-title {
     top: 37vh;
     font-family: PoppinsBlack;
-    font-size: calc(100% + 2.5vw + 2.5vh);
+    font-size: calc(100% + 1.7vw + 1.7vh);
     text-shadow: 0 20px 30px rgba(255, 255, 255, 0.16);
   }
 
   .sub-title {
-    top: 47vh;
+    top: 50vh;
     font-family: PoppinsMedium;
     font-size: calc(100% + 0.45vw + 0.45vh);
     color: white;
@@ -141,6 +141,18 @@
       width: 130px;
       height: 53px;
       font-size: 1em;
+    }
+  }
+}
+
+@media (max-width: 453px) {
+  .home-hero {
+    .main-title {
+      font-size: calc(100% + 1.2vw + 1.2vh);
+    }
+
+    .sub-title {
+      top: 55vh;
     }
   }
 }
