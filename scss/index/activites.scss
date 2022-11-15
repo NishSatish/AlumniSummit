@@ -5,118 +5,34 @@
 #activities {
   margin-top: 200px;
 
-  .help-text {
-    color: white;
-    font-family: PoppinsMedium;
-    text-align: center;
-    margin-bottom: 50px;
-  }
-
   h1 {
+    margin-bottom: 50px;
     text-align: center;
   }
 }
 
-.content-box-small {
-  z-index: 10;
-  height: 200px;
-  width: 200px;
-  background-color: $banner-blue;
-  border-radius: 17px;
-  margin-bottom: 5px;
-  color: $banner-blue;
-  text-align: center;
-  transition: 500ms;
-
-  .hidden-text {
-    visibility: hidden;
-    font-family: PoppinsMedium;
-  }
-
-  .activity-name {
-    transition: 500ms;
-    position: relative;
-    padding-top: 80px;
-    padding-bottom: 10px;
-    font-size: 1.5em;
-    font-family: PoppinsBlack;
-    color: white;
-  }
-
-  .activity-date {
-    font-family: PoppinsSemiBold;
-    color: white;
-  }
+.activity-name {
+  font-size: 1.9em;
+  font-family: PoppinsBlack;
+  color: white;
+  text-transform: uppercase;
 }
 
-.content-box-small:hover {
-  height: 350px;
-  width: 350px;
-  padding: 15px;
-  background-color: white;
-  border: 5px solid $banner-yellow;
-
-  .activity-name {
-    padding-top: 10px;
-    padding-bottom: 7px;
-    font-size: 1.7em;
-    color: $banner-blue;
-  }
-
-  .activity-date {
-    color: $banner-blue;
-  }
-
-  .hidden-text,
-  .activity-date {
-    visibility: visible;
-    transition-delay: 300ms;
-  }
+.activity-date {
+  color: white;
+  font-family: PoppinsBold;
+  margin-bottom: 15px;
 }
 
-.cb1,
-.cb4 {
-  float: right;
-}
-
-.small-row2 {
-  margin-top: 30px !important;
-}
-
-.cb4 {
-  .activity-name {
-    font-size: 1.3em;
-    padding-top: 70px;
-  }
-
-  .hidden-text {
-    margin-top: 5px;
-  }
-}
-
-.main-activity {
+.activity-container {
   height: 35vh;
   width: 40vw;
-  background-color: $banner-blue;
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
   border-radius: 17px;
   text-align: center;
   padding-top: 10px;
-  border: 5px solid $banner-yellow;
-
-  .main-activity-name {
-    font-size: 1.9em;
-    font-family: PoppinsBlack;
-    color: white;
-  }
-
-  .main-activity-date {
-    color: white;
-    font-family: PoppinsBold;
-    margin-bottom: 15px;
-  }
 
   p {
     font-family: PoppinsMedium;
@@ -133,10 +49,38 @@
     margin-top: 0px;
   }
 
+  .more-info {
+    background-color: $banner-blue !important;
+    border: 1px solid $banner-yellow !important;
+    color: $banner-yellow;
+    margin-left: 10px;
+  }
+
   .activity-cta:hover {
     background-color: transparent;
     color: $banner-yellow;
     border: 1px solid $banner-yellow;
+  }
+}
+
+.main-activity {
+  background-color: $banner-blue;
+  border: 5px solid $banner-yellow;
+}
+
+.sports-day {
+  background-color: white;
+  border: 5px solid $banner-yellow;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+
+  .activity-name {
+    font-size: 1.7em;
+  }
+
+  div,
+  p {
+    color: $banner-blue;
   }
 }
 
@@ -152,40 +96,29 @@
   }
 }
 
+.last-activity-row {
+  margin-bottom: 20px;
+}
+
 // --------------------------- MEDIA QUERIES -----------------------------------
+@media (max-width: 1100px) {
+  .activity-container {
+    height: 400px;
+  }
+}
+
 @media (max-width: 890px) {
-  .main-activity {
+  .activity-container {
     height: 400px;
   }
 }
 
 @media (max-width: 768px) {
-  .cb1,
-  .cb2,
-  .cb3,
-  .cb4 {
-    float: initial;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-
-  .content-box-small:hover {
-    height: 410px;
-
-    .cb1 {
-      height: 4600px;
-    }
-  }
-
-  .main-activity {
+  .activity-container {
     height: 430px;
     width: 400px;
     padding-left: 10px;
     padding-right: 10px;
-  }
-
-  .small-row1 {
-    align-items: center;
   }
 
   .saturn {
@@ -204,17 +137,8 @@
 }
 
 @media (max-width: 520px) {
-  .main-activity {
+  .activity-container {
     height: 450px;
     width: 300px;
-  }
-
-  .content-box-small:hover {
-    height: 500px;
-    width: 250px;
-  }
-
-  .cb4:hover {
-    height: 450px;
   }
 }

@@ -8,14 +8,14 @@
 
 .agenda-hero {
   background-color: #2c2644;
-  position: relative;
+  // position: relative;
   height: 50vh;
 }
 
 .sub-title-agenda {
   position: absolute;
   @include centralise;
-  top: 37vh;
+  top: 34vh;
   color: white;
   font-size: 1.5em;
   font-family: PoppinsSemiBold;
@@ -28,4 +28,29 @@
   text-transform: uppercase;
   color: $banner-yellow;
   font-family: PoppinsBlack;
+}
+
+.agenda-cta {
+  position: absolute;
+  font-family: PoppinsSemiBold;
+  top: 41vh;
+  transition: 0.9s;
+  transition-property: background-color;
+  @include centralise;
+
+  a {
+    width: 139px;
+    height: 36px;
+    padding: 10px;
+    border-radius: 17px;
+    color: $banner-yellow;
+    background-color: $banner-blue;
+    text-decoration: none !important;
+    font-size: 1.1em;
+  }
+  a:hover {
+    color: $banner-yellow;
+    border: 1px solid $banner-yellow;
+    background-color: transparent;
+  }
 }
